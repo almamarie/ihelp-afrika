@@ -13,9 +13,6 @@ const MainLayout = () => {
         <div className="bg-yellow h-2 mt-6"></div>
         <header>
           <nav className="flex justify-center gap-16 mt-5">
-            <NavLink className={(props) => getNavClass(props)} to="/about-us">
-              About us
-            </NavLink>
             <div className="relative group">
               <NavLink className="px-2" to="/our-projects">
                 Our Projects

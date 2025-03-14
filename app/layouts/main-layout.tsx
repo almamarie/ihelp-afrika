@@ -14,25 +14,23 @@ const MainLayout = () => {
         <header>
           <nav className="flex justify-center gap-16 mt-5">
             <div className="relative group">
-              <NavLink className="px-2" to="/our-projects">
-                Our Projects
-              </NavLink>
+              <div className="px-2 cursor-pointer">Our Projects</div>
               <div className="absolute hidden w-35 p-3 flex-col gap-2 bg-bright-green/10 ml-2 group-hover:flex">
                 <Link
                   className="text-xs font-light border-b-[0.5px] border-black/20 pb-1.5"
-                  to="one-girl-one-box"
+                  to="/our-projects/one-girl-one-box"
                 >
                   One Girl One Box Project
                 </Link>
                 <Link
                   className="text-xs font-light border-b-[0.5px] border-black/20 pb-1.5"
-                  to="volunteer-medical-placement"
+                  to="/our-projects/volunteer-medical-placement"
                 >
                   Our Volunteer/ Medical Placement Program
                 </Link>
                 <Link
                   className="text-xs font-light border-b-[0.5px] border-black/20 pb-1.5"
-                  to="mental-health-education"
+                  to="/our-projects/mental-health-education"
                 >
                   Mental Health Education
                 </Link>

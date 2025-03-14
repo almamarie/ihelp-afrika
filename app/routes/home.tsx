@@ -31,7 +31,7 @@ export default function Home() {
       </div>
       <img
         className="mt-20 w-full h-auto"
-        src="/girls-holding-pads.png"
+        src="/home/girls-holding-pads.png"
         alt="girls holding menstrual pads"
       />
       <section className="mt-20">
@@ -68,7 +68,7 @@ export default function Home() {
 
         <div className="grid grid-cols-[auto_1fr] mt-10 gap-0 w-[1245px] mx-auto">
           <img
-            src="/women-playing-with-child.png"
+            src="/home/women-playing-with-child.png"
             alt="women playing with a child"
           />
           <div className="h-86 bg-yellow self-center text-center px-8 flex flex-col items-center justify-center">
@@ -95,7 +95,10 @@ export default function Home() {
             </p>
           </div>
 
-          <img src="/school-girl-smiling.png" alt="a school girl smiling" />
+          <img
+            src="/home/school-girl-smiling.png"
+            alt="a school girl smiling"
+          />
         </div>
       </section>
 
@@ -129,8 +132,8 @@ export default function Home() {
       <section className="mt-10 w-[1245px] mx-auto">
         <h2 className="text-6xl font-thin mb-5 ">OUR PARTNERS</h2>
         <div className="pt-5 flex gap-19 items-center">
-          <img src="/Lund-uni-logo.png" alt="lund university" />
-          <img src="/right-2-smile-logo.png" alt="right to smile" />
+          <img src="/home/Lund-uni-logo.png" alt="lund university" />
+          <img src="/home/right-2-smile-logo.png" alt="right to smile" />
         </div>
       </section>
     </div>

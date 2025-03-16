@@ -10,7 +10,7 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <div>
-      <div className="flex justify-between mt-10 w-[1245px] mx-auto">
+      <div className="flex justify-between mt-10  w-[1245px] mx-auto">
         <div className="h-116 w-93 flex items-center text-5xl justify-center bg-yellow font-bold text-white">
           ONE GIRL
           <br /> ONE BOX

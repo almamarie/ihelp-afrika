@@ -19,3 +19,33 @@ body {
     color-scheme: dark;
   }
 }
+
+
+@layer components{
+  .box{
+    @apply max-w-[1245px] mx-auto
+  }
+
+  .heading-1 {
+    @apply text-6xl font-thin mb-5
+  }
+
+   .heading-2 {
+    @apply text-3xl font-thin mb-5
+  }
+
+  /* Hide scrollbar for Chrome, Safari */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for Firefox */
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+
+  /* Hide scrollbar for IE & Edge */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+  }
+}

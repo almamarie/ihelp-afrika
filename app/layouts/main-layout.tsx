@@ -1,4 +1,6 @@
 import { Link, NavLink, Outlet, type NavLinkRenderProps } from "react-router";
+import IconFacebook from "~/ui/icons/Facebook";
+import { IconInstagram } from "~/ui/icons/Instagram";
 
 const getNavClass = (props: NavLinkRenderProps) => {
   return [
@@ -9,10 +11,13 @@ const getNavClass = (props: NavLinkRenderProps) => {
 const MainLayout = () => {
   return (
     <div>
-      <div className="w-[1245px] mx-auto">
+      <div className="box">
         <div className="bg-yellow h-2 mt-6"></div>
         <header>
           <nav className="flex justify-center gap-16 mt-5">
+            <NavLink className={(props) => getNavClass(props)} to="/">
+              About us
+            </NavLink>
             <div className="relative group">
               <div className="px-2 cursor-pointer">Our Projects</div>
               <div className="absolute hidden w-35 p-3 flex-col gap-2 bg-bright-green/10 ml-2 group-hover:flex">
@@ -71,11 +76,9 @@ const MainLayout = () => {
 
       <footer className="pb-25">
         <div className="bg-yellow ">
-          <h2 className="text-6xl font-thin mb-5 w-[1245px] mx-auto py-4">
-            CONTACT US
-          </h2>
+          <h2 className="text-6xl font-thin mb-5 box py-4">CONTACT US</h2>
         </div>
-        <div className="flex gap-47 w-[1245px] mx-auto">
+        <div className="flex gap-47 box">
           <form className="w-107">
             <h4 className="text-4xl font-black">GET IN TOUCH</h4>
 
@@ -127,11 +130,29 @@ const MainLayout = () => {
               </button>
             </div>
           </form>
-          <img
-            className="self-start"
-            src="/people-riding-bicycle.png"
-            alt="people riding bicycles"
-          />
+          <div>
+            <img
+              className="self-start"
+              src="/people-riding-bicycle.png"
+              alt="people riding bicycles"
+            />
+            <p className="mt-7 text-xl">
+              iHelpafrika Foundation
+              <br /> P. O. Box YP 178
+              <br /> Kpando, Volta Region, Ghana
+            </p>
+
+            <div className="mt-5 flex justify-start gap-9">
+              <div className="flex items-center gap-1 text-xl">
+                <IconFacebook />
+                ihelpafrika
+              </div>
+              <div className="flex items-center gap-1 text-xl">
+                <IconInstagram />
+                ihelpafrika
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

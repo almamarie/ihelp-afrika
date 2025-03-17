@@ -26,7 +26,7 @@ const OneGirlOneBox = () => {
           <br /> EDUCATION
         </div>
         <img
-          src="/public/projects/mental-health-education/hero-img.png"
+          src="/projects/mental-health-education/hero-img.png"
           alt="one girl one box"
         />
       </div>
@@ -154,7 +154,7 @@ const OneGirlOneBox = () => {
           <div className="gap-8 grid grid-cols-3 box">
             <div className="bg-bright-green px-6 py-5">
               <img
-                src="/public/projects/volunteer-project/medical-2.png"
+                src="/projects/volunteer-placement/medical-2.png"
                 alt="ihelp afrika mentorship for adolescent girls"
                 className="w-full h-auto"
               />
@@ -170,7 +170,7 @@ const OneGirlOneBox = () => {
             </div>
             <div className="bg-bright-green px-6 py-5">
               <img
-                src="/public/projects/volunteer-project/medical-2.png"
+                src="/projects/volunteer-placement/medical-2.png"
                 alt="ihelp afrika mentorship for adolescent girls"
                 className="w-full h-auto"
               />
@@ -186,7 +186,7 @@ const OneGirlOneBox = () => {
             </div>
             <div className="bg-bright-green px-6 py-5">
               <img
-                src="/public/projects/volunteer-project/medical-2.png"
+                src="/projects/volunteer-placement/medical-2.png"
                 alt="ihelp afrika mentorship for adolescent girls"
                 className="w-full h-auto"
               />

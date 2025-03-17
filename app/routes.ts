@@ -8,14 +8,17 @@ import {
 export default [
   layout("./layouts/main-layout.tsx", [
     index("routes/home.tsx"),
-    route("our-projects", "routes/our-projects.tsx", [
-      route("one-girl-one-box", "routes/one-girl-one-box.tsx"),
+    route("our-projects", "routes/projects/our-projects.tsx", [
+      route("one-girl-one-box", "routes/projects/one-girl-one-box.tsx"),
       route(
         "volunteer-medical-placement",
-        "routes/volunteer-placement-program.tsx"
+        "routes/projects/volunteer-placement-program.tsx"
       ),
-      route("mental-health-education", "routes/mental-health-education.tsx"),
-      route("volunteer-project", "routes/volunteer-project.tsx"),
+      route(
+        "mental-health-education",
+        "routes/projects/mental-health-education.tsx"
+      ),
+      route("volunteer-project", "routes/projects/volunteer-project.tsx"),
     ]),
   ]),
 ] satisfies RouteConfig;

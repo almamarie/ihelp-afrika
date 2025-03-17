@@ -15,6 +15,7 @@ export default [
         "routes/volunteer-placement-program.tsx"
       ),
       route("mental-health-education", "routes/mental-health-education.tsx"),
+      route("volunteer-project", "routes/volunteer-project.tsx"),
     ]),
   ]),
 ] satisfies RouteConfig;

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { ArrowCircleRightRounded } from "~/ui/icons/ArrowCircleRightRounded";
-import { IconArrowRight } from "~/ui/icons/ArrowRight";
+import { ArrowCircleRightRounded } from "~/ui/icons/icon-arrow-circle-right-rounded";
+import { IconArrowRight } from "~/ui/icons/icon-arrow-right";
 
 const OneGirlOneBox = () => {
   const images = [
@@ -19,8 +19,8 @@ const OneGirlOneBox = () => {
   ];
   return (
     <div>
-      <div className="relative box flex justify-end mt-28">
-        <div className="text-4xl text-white font-bold py-8 px-9 bg-teal-green absolute -top-16 left-0">
+      <div className="relative flex justify-end mt-28 box">
+        <div className="-top-16 left-0 absolute bg-teal-green px-9 py-8 font-bold text-white text-4xl">
           MENTAL
           <br /> HEALTH
           <br /> EDUCATION
@@ -32,7 +32,7 @@ const OneGirlOneBox = () => {
       </div>
 
       <section className="mt-24">
-        <h2 className=" heading-1 box">PROJECT OVERVIEW</h2>
+        <h2 className="heading-1 box">PROJECT OVERVIEW</h2>
         <div className="bg-yellow/15 pt-5 pb-8">
           <p className="box">
             Mental health education is a critical advocate for our community's
@@ -64,7 +64,7 @@ const OneGirlOneBox = () => {
           Community
         </h2>
 
-        <div className="grid grid-cols-[622px_1fr] gap-24">
+        <div className="gap-24 grid grid-cols-[622px_1fr]">
           <div>
             <p>
               By integrating mental health education into our community's
@@ -72,22 +72,22 @@ const OneGirlOneBox = () => {
             </p>
 
             <ul className="mt-6">
-              <li className="mb-5 flex gap-2 items-center">
+              <li className="flex items-center gap-2 mb-5">
                 <IconArrowRight />
                 <p>Raise awareness about mental health issues</p>
               </li>
-              <li className="mb-5 flex gap-2 items-center">
+              <li className="flex items-center gap-2 mb-5">
                 <IconArrowRight />
                 <p>Reduce stigma around mental illness</p>
               </li>
-              <li className="mb-5 flex gap-2 items-center">
+              <li className="flex items-center gap-2 mb-5">
                 <IconArrowRight />
                 <p>
                   Equip young people with coping mechanisms and stress
                   management techniques
                 </p>
               </li>
-              <li className="mb-5 flex gap-2 items-center">
+              <li className="flex items-center gap-2 mb-5">
                 <IconArrowRight />
                 <p>
                   Foster a supportive community that encourages open
@@ -100,19 +100,19 @@ const OneGirlOneBox = () => {
             <img
               src="/projects/one-girl-one-box/man-talking-to-student.png"
               alt="ihelp afrika medical volunteer"
-              className="absolute right-0 top-0"
+              className="top-0 right-0 absolute"
             />
             <img
               src="/projects/one-girl-one-box/people-holding-pads.png"
               alt="ihelp afrika medical volunteer"
-              className="absolute right-56 top-20"
+              className="top-20 right-56 absolute"
             />
           </div>
         </div>
       </section>
 
       <section className="mt-11">
-        <h2 className="text-6xl font-thin mb-5 heading-1 box">
+        <h2 className="mb-5 font-thin text-6xl heading-1 box">
           Join the Movement
         </h2>
         <div className="bg-yellow/15 pt-5 pb-8">
@@ -121,16 +121,16 @@ const OneGirlOneBox = () => {
               Together, we can break the silence surrounding mental health and
               create a more supportive and inclusive community for all.
             </p>
-            <ArrowCircleRightRounded className="w-8 h-8 mt-3.5" />
+            <ArrowCircleRightRounded className="mt-3.5 w-8 h-8" />
           </div>
         </div>
       </section>
 
       <section className="mt-10 overflow-hidden">
-        <h2 className="text-6xl font-thin mb-5 box">GALLLERY</h2>
-        <div className="relative w-full overflow-x-auto whitespace-nowrap bg-yellow/15 py-4 no-scrollbar">
+        <h2 className="mb-5 font-thin text-6xl box">GALLLERY</h2>
+        <div className="relative bg-yellow/15 py-4 w-full overflow-x-auto whitespace-nowrap no-scrollbar">
           <motion.div
-            className="flex w-max gap-7"
+            className="flex gap-7 w-max"
             initial={{ x: "0%" }}
             animate={{ x: ["0%", "-100%"] }}
             transition={{ repeat: Infinity, duration: 90, ease: "linear" }}
@@ -151,50 +151,50 @@ const OneGirlOneBox = () => {
         <h2 className="mb-5 heading-1 box">OUR BLOG</h2>
 
         <div className="bg-yellow/15 pt-5 pb-8">
-          <div className="box grid grid-cols-3 gap-8">
-            <div className="px-6 py-5 bg-bright-green">
+          <div className="gap-8 grid grid-cols-3 box">
+            <div className="bg-bright-green px-6 py-5">
               <img
                 src="/public/projects/volunteer-project/medical-2.png"
                 alt="ihelp afrika mentorship for adolescent girls"
                 className="w-full h-auto"
               />
-              <p className="w-3xs mt-3.5">
+              <p className="mt-3.5 w-3xs">
                 Our third mentorship for adolescent girls
               </p>
               <div className="flex justify-between items-end mt-8">
-                <p className="font-light text-sm w-32">
+                <p className="w-32 font-light text-sm">
                   our mental health education
                 </p>
                 <p className="font-light text-sm">Feb 28, 2025</p>
               </div>
             </div>
-            <div className="px-6 py-5 bg-bright-green">
+            <div className="bg-bright-green px-6 py-5">
               <img
                 src="/public/projects/volunteer-project/medical-2.png"
                 alt="ihelp afrika mentorship for adolescent girls"
                 className="w-full h-auto"
               />
-              <p className="w-3xs mt-3.5">
+              <p className="mt-3.5 w-3xs">
                 Our third mentorship for adolescent girls
               </p>
               <div className="flex justify-between items-end mt-8">
-                <p className="font-light text-sm w-32">
+                <p className="w-32 font-light text-sm">
                   our mental health education
                 </p>
                 <p className="font-light text-sm">Feb 28, 2025</p>
               </div>
             </div>
-            <div className="px-6 py-5 bg-bright-green">
+            <div className="bg-bright-green px-6 py-5">
               <img
                 src="/public/projects/volunteer-project/medical-2.png"
                 alt="ihelp afrika mentorship for adolescent girls"
                 className="w-full h-auto"
               />
-              <p className="w-3xs mt-3.5">
+              <p className="mt-3.5 w-3xs">
                 Our third mentorship for adolescent girls
               </p>
               <div className="flex justify-between items-end mt-8">
-                <p className="font-light text-sm w-32">
+                <p className="w-32 font-light text-sm">
                   our mental health education
                 </p>
                 <p className="font-light text-sm">Feb 28, 2025</p>

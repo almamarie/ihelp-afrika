@@ -8,12 +8,14 @@
   --color-bright-green: #33C35C;
   --color-dark-green: #104747;
   --color-yellow: #EFCA0C;
+  --color-light-yellow: #FAF2CD;
+
 
 }
 
 html,
 body {
-  @apply font-sans bg-white dark:bg-gray-950;
+  @apply bg-white dark:bg-gray-950 font-sans font-light text-lg;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;

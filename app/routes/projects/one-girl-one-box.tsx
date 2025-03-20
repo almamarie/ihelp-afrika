@@ -20,7 +20,7 @@ const OneGirlOneBox = () => {
   return (
     <div>
       <div className="relative flex justify-end mt-28 box">
-        <p className="-top-4 left-20 z-20 absolute bg-yellow px-9 pt-8 pb-10 font-bold text-4xl">
+        <p className="-top-4 -left-20 z-20 absolute bg-yellow px-9 pt-8 pb-10 font-bold text-[#FFFCFC] text-4xl">
           ONE GIRL
           <br /> ONE BOX
           <br /> PROJECT

@@ -15,7 +15,7 @@ const MainLayout = () => {
         <div className="bg-yellow mt-6 h-2"></div>
         <header>
           <nav className="flex justify-center gap-16 mt-5">
-            <NavLink className={(props) => getNavClass(props)} to="/">
+            <NavLink className={getNavClass} to="/">
               About us
             </NavLink>
             <div className="group relative">
@@ -41,19 +41,16 @@ const MainLayout = () => {
                 </Link>
               </div>
             </div>
-            <NavLink className={(props) => getNavClass(props)} to="/our-blog">
+            <NavLink className={getNavClass} to="/blog">
               Our Blog
             </NavLink>
-            <NavLink
-              className={(props) => getNavClass(props)}
-              to="/get-involved"
-            >
+            <NavLink className={getNavClass} to="/get-involved">
               Get involved
             </NavLink>
-            <NavLink className={(props) => getNavClass(props)} to="/our-team">
+            <NavLink className={getNavClass} to="/our-team">
               Our team
             </NavLink>
-            <NavLink className={(props) => getNavClass(props)} to="/contact-us">
+            <NavLink className={getNavClass} to="/contact-us">
               Contact Us
             </NavLink>
           </nav>

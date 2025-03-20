@@ -20,5 +20,6 @@ export default [
       ),
       route("volunteer-project", "routes/projects/volunteer-project.tsx"),
     ]),
+    route("blog", "routes/blog/blog.tsx"),
   ]),
 ] satisfies RouteConfig;

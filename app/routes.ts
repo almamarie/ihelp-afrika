@@ -2,6 +2,7 @@ import {
   type RouteConfig,
   index,
   layout,
+  prefix,
   route,
 } from "@react-router/dev/routes";
 
@@ -20,6 +21,12 @@ export default [
       ),
       route("volunteer-project", "routes/projects/volunteer-project.tsx"),
     ]),
-    route("blog", "routes/blog/blog.tsx"),
+
+    layout("./layouts/blog-layout.tsx", [
+      ...prefix("blog", [
+        index("routes/blog/blog.tsx"),
+        route(":slug", "routes/blog/blog-details.tsx"),
+      ]),
+    ]),
   ]),
 ] satisfies RouteConfig;

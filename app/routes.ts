@@ -28,5 +28,7 @@ export default [
         route(":slug", "routes/blog/blog-details.tsx"),
       ]),
     ]),
+    // route("contact-us", "routes/contact-us/contact-us.tsx"),
+    route("our-team", "routes/team/team.tsx"),
   ]),
 ] satisfies RouteConfig;

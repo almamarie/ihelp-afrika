@@ -17,3 +17,10 @@ export type Article = {
   content: string[];
   description: string;
 };
+
+
+export type Team = {
+  name: string;
+  designation: string;
+  img: string;
+};

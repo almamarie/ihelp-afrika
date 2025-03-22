@@ -3,10 +3,13 @@ import IconFacebook from "~/ui/icons/icon-facebook";
 import { IconInstagram } from "~/ui/icons/icon-instagram";
 
 const getNavClass = (props: NavLinkRenderProps) => {
-  return [
-    "px-2 border-b-4 border-transparent hover:border-teal-green/80 ",
-    props.isActive ? "border-teal-green" : "",
-  ].join();
+  const classes = [
+    "px-2 border-b-4 hover:border-teal-green/80 border-teal-green",
+    props.isActive ? "border-teal-green" : "border-transparent",
+  ].join(" ");
+  console.log(" Classes: ", classes);
+
+  return classes;
 };
 const MainLayout = () => {
   return (
@@ -50,7 +53,7 @@ const MainLayout = () => {
             <NavLink className={getNavClass} to="/our-team">
               Our team
             </NavLink>
-            <NavLink className={getNavClass} to="/contact-us">
+            <NavLink className={getNavClass} to="/#contact-us">
               Contact Us
             </NavLink>
           </nav>
@@ -76,7 +79,7 @@ const MainLayout = () => {
           <h2 className="mb-5 py-4 font-thin text-6xl box">CONTACT US</h2>
         </div>
         <div className="flex gap-47 box">
-          <form className="w-107">
+          <form className="w-107" id="contact-us">
             <h4 className="font-black text-4xl">GET IN TOUCH</h4>
 
             <div className="flex flex-col gap-5">
